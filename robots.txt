@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://chung-massoterapia.vercel.app/sitemap.xml
