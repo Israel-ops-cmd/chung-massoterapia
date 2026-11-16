@@ -78,10 +78,14 @@
   });
 
   const hero = $('.hero');
-  requestAnimationFrame(() => {
+  // espera a entrada (só na primeira visita da sessão) antes de animar o hero
+  const intro = $('.intro');
+  const introOn = intro && !reduce && !document.documentElement.classList.contains('no-intro');
+  setTimeout(() => requestAnimationFrame(() => {
     hero.classList.add('in');
     $('.hero__title').classList.add('in');
-  });
+  }), introOn ? 2350 : 0);
+  if (intro) setTimeout(() => intro.remove(), introOn ? 3300 : reduce ? 1200 : 0);
 
   /* ---------- odômetro ---------- */
   const odo = (el) => {
