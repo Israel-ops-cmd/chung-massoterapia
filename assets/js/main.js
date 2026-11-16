@@ -70,7 +70,7 @@
       io.unobserve(e.target);
     });
   }, { rootMargin: '0px 0px -12% 0px', threshold: 0.08 });
-  $$('.fade-up, [data-words]:not(.hero__title)').forEach((el) => io.observe(el));
+  $$('.fade-up, .final__cut, [data-words]:not(.hero__title)').forEach((el) => io.observe(el));
   $$('.reveal-mask').forEach((el) => {
     const host = el.parentElement;
     if (!masks.has(host)) { masks.set(host, host.classList.contains('fade-up') ? [host] : []); io.observe(host); }
