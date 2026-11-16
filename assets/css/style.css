@@ -531,7 +531,7 @@ section { position: relative; }
 .js .reveal-mask img { scale: 1.15; transition: scale 1.6s var(--ease); }
 .js .reveal-mask.in { clip-path: inset(0 0 0 0 round 12px); }
 .js .reveal-mask.in img { scale: 1; }
-.js [data-words] .word { display: inline-block; overflow: hidden; vertical-align: top; padding-bottom: .08em; margin-bottom: -.08em; }
+.js [data-words] .word { display: inline-block; overflow: hidden; vertical-align: top; padding: .2em .08em .14em; margin: -.2em -.08em -.14em; }
 .js [data-words] .word > span { display: inline-block; translate: 0 105%; transition: translate 1s var(--ease); transition-delay: calc(var(--wi) * 70ms + .15s); }
 .js [data-words].in .word > span { translate: 0 0; }
 .js .hero__frame { clip-path: inset(100% 0 0 0); transition: clip-path 1.2s var(--ease) .1s; }
